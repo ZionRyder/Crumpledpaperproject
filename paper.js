@@ -16,9 +16,9 @@ class Paper {
         var pos = this.body.position;
         push();
         translate(pos.x, pos.y);
-        elipseMode(10);
-        strokeweight(3);
+        ellipseMode(RADIUS);
+        strokeWeight(3);
         fill(255, 0, 255);
-        elipse(0,0, this.r, this.r);
+        ellipse(0,0, this.r, this.r);
     }
 }

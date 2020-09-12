@@ -19,9 +19,9 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-	paper = new Paper(200,200,200)
+	paper = new Paper(200,200,20)
 	
-	ground = (400, 650, 700, 5, isStatic=true);
+	ground = new Ground(400, 600, 700, 5);
   
 }
 
@@ -30,7 +30,7 @@ function draw() {
   rectMode(CENTER);
   background(0);
 paper.display();
-	ground.display();
+ground.display();
 
   
   drawSprites();
