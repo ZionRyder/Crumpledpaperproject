@@ -8,7 +8,7 @@ class Ground {
         this.y = y;
         this.width = width;
         this.height = height;
-        this.body=Bodies.rectangle(this.x, this.y, this.width, this.height, options);
+        this.body=Bodies.rectangle(x, y, width, height, options);
         World.add(world, this.body);
     }
     display(){
@@ -16,8 +16,9 @@ class Ground {
         push();
         translate(pos.x, pos.y);
         rectMode(CENTER);
-        strokeWeight(3);
-        fill(255, 0, 255);
-        rect(pos.x, pos.y, width, height)
+        strokeWeight(20);
+        fill(255,255,255);
+        rect(0, 0, width, height);
+        pop();
     }
 }
